@@ -1,0 +1,45 @@
+.video-detail {
+    margin-bottom: 25px;
+}
+
+.video-detail-info {
+    margin-top: 15px;
+
+}
+
+h4 {
+    margin: 10px 0px;
+    border-bottom: 1px solid rgb(230, 228, 228);
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 12px;
+}
+
+.channel-title {
+    font-weight: bold;
+}
+
+.channel-description {
+    margin: 0px 30px;
+}
+
+.embed {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.26%;
+    position: relative;
+}
+
+.embed iframe {
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+@media(min-width: 768px) {
+    p {
+        font-size: 13px;
+    }
+}
