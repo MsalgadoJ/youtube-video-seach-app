@@ -7,7 +7,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
     
     return (
         <div onClick={() => onVideoSelect(video) } className="video-item" >
-            <Slide top cascade>
+            <Slide top>
             <img src={video.snippet.thumbnails.medium.url} alt={video.snippet.title}/>
             <div className="video-item-info">
                 <h6>{video.snippet.title}</h6>

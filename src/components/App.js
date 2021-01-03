@@ -8,7 +8,7 @@ import Footer from './Footer';
 
 class App extends React.Component {
 
-    state = { videos: [], selectedVideo: null };
+    state = { videos: [], selectedVideo: null, term: null };
 
     componentDidMount() {
         this.onTermSubmit('React JS')
@@ -23,7 +23,8 @@ class App extends React.Component {
 
         this.setState({ 
             videos: response.data.items,
-            selectedVideo: response.data.items[0]
+            selectedVideo: response.data.items[0],
+            term: term
         })
     }
 
@@ -43,7 +44,8 @@ class App extends React.Component {
                     <div className="content-right">
                         <VideoList 
                             onVideoSelect={this.onVideoSelect}
-                            videos={this.state.videos} 
+                            videos={this.state.videos}
+                            term={this.state.term} 
                         />
                     </div>
                 </div>
